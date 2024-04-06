@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="header-left">
+            <img src="assets/img/i.jpg" alt="Account Picture" id="accountPicture">
+            <i class="fas fa-bell"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fas fa-th-list"></i> <!-- List icon -->
+            <i id="darkModeBtn" class="material-icons">brightness_3</i>
+            <i id="lightModeBtn" class="material-icons">brightness_high</i>
+        </div>
+        <div class="header-middle">
+            <i class="fas fa-gamepad"></i>
+            <i class="fas fa-users"></i>
+            <i class="fas fa-store"></i>
+            <i class="fas fa-video"></i>
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="header-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search on Facebook" id="searchInput">
+                <i id="searchButton" class="fas fa-search"></i>
+            </div>
+            <i class="fab fa-facebook" id="facebook-icon"></i>
+        </div>
+    </header>
+
+
+    <aside class="fixed-sidebar-left" id="sidebarx">
+        <!-- Left sidebar content -->
+        <ul class="sidebar-menu">
+            <li class="user-page">
+                <img src="assets/img/i.jpg" alt="User's Page">
+                <a href="#"><i class="fas fa-exchange-alt"></i>Switch to Page</a>
+            </li>
+            <li><a href="#"><i class="fas fa-user-circle"></i> Personal Pages</a></li>
+            <li><a href="#"><i class="fas fa-file"></i> Files</a></li>
+            <li><a href="#"><i class="fas fa-bullhorn"></i> Create Promotion</a></li>
+            <hr>
+            <li><a href="#"><i class="fas fa-address-book"></i> Contacts</a></li>
+            <hr>
+            <li><a href="#"><i class="fas fa-users"></i> Create Group</a></li>
+        </ul>
+        <hr>
+        <!-- Left sidebar content -->
+        <section class="user-profile">
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+            <div class="profile-picture">
+                <img src="i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+
+            <div class="profile-picture">
+                <img src="assets/img/i.jpg" alt="Profile Picture">
+                <h2>User Name</h2>
+            </div>
+
+        </section>
+
+    </aside>
+
+    <aside class="fixed-sidebar-right" id="sidebar">
+        <!-- Right sidebar content -->
+        <ul class="sidebar-menu">
+            <!-- Other sidebar items -->
+            <li>
+                <a href="#" id="toggle-sidebar">
+                    <div class="user-profile-right">
+                        <img src="assets/img/i.jpg" alt="User Photo">
+                        <span>User Name</span>
+                    </div>
+                </a>
+            </li>
+
+
+            <li><a href="#"><i class="fas fa-user-friends"></i> Friends</a></li>
+
+            <li><a href="#"><i class="fas fa-users"></i> Groups</a></li>
+
+            <li><a href="#"><i class="fas fa-history"></i> Memories</a></li>
+
+            <li><a href="#"><i class="fas fa-bookmark"></i> Saved</a></li>
+
+            <li><a href="#"><i class="fas fa-video"></i> Watch</a></li>
+
+            <li><a href="#"><i class="fas fa-store"></i> Marketplace</a></li>
+
+            <li><a href="#"><i class="fas fa-rss"></i> News Feed</a></li>
+
+            <li><a href="#"><i class="far fa-calendar-alt"></i> Events</a></li>
+
+            <li><a href="#"><i class="fas fa-tint"></i> Blood Donations</a></li>
+
+            <li><a href="#"><i class="fas fa-book"></i> Page Icons</a></li>
+
+            <li><a href="#"><i class="fas fa-shopping-cart"></i> Ordering and Payment Processes</a></li>
+
+            <li><a href="#"><i class="fas fa-hand-holding-heart"></i> Fundraising Campaigns</a></li>
+
+            <li><a href="#"><i class="fas fa-gamepad"></i> Playing Games</a></li>
+
+            <li><a href="#"><i class="fas fa-ad"></i> Ads Manager</a></li>
+
+            <li><a href="#"><i class="fas fa-globe"></i> Climate Science Center</a></li>
+
+            <li><a href="#"><i class="fas fa-video"></i> Game Videos</a></li>
+
+            <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+
+            <li><a href="#"><i class="fas fa-child"></i> Children’s Messages</a></li>
+
+            <li><a href="#"><i class="fas fa-building"></i> Meta Business Suite</a></li>
+
+        </ul>
+    </aside>
+
+    <main class="content">
+        <div class="scrollable-content-x">
+            <!-- Story creation row -->
+            <div class="story-row" id="storyrow">
+                <!-- User's story -->
+                <div class="story user-story">
+                    <button class="create-story-button"><i class="fas fa-plus"></i> Create Story</button>
+                    <img src="i.jpg" alt="User's Story">
+                    <span>User</span>
+                </div>
+                <div class="story">
+                    <img src="i.jpg" alt="User's Story">
+                    <span>User</span>
+                </div>
+                <!-- Friend's stories -->
+                <div class="story">
+                    <img src="تنزيل (1).png" alt="Friend 1's Story">
+                    <span>Friend 1</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <div class="story">
+                    <img src="media-quality-.png" alt="Friend 2's Story">
+                    <span>Friend 2</span>
+                </div>
+                <!-- Add more friend stories as needed -->
+            </div>
+            <!-- Left arrow icon -->
+            <div class="arrow-icon arrow-icon-left" id="arrowIconLeftstory">
+                <i class="material-icons">chevron_left</i>
+            </div>
+            <!-- Right arrow icon -->
+            <div class="arrow-icon arrow-icon-right" id="arrowIconRightstory">
+                <i class="material-icons">chevron_right</i>
+            </div>
+
+            <!-- User post section -->
+        </div>
+        <div class="scrollable-content">
+            <!-- Your dynamic content goes here -->
+            <div class="user-post-section">
+                <div class="user-info">
+                    <img src="assets/img/i.jpg" alt="User Photo">
+                    <input type="text" placeholder="What are you thinking?">
+                </div>
+                <hr>
+                <div class="post-icons">
+                    <button><i class="fas fa-video"></i> Live Video</button>
+                    <button><i class="fas fa-image"></i> Photo/Video</button>
+                    <button><i class="far fa-smile"></i> Feeling/Activity</button>
+                </div>
+            </div>
+            <!-- Inside the post element -->
+            <div class="post-content">
+                <section class="news-feed">
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="User Profile Picture">
+                            <h4>User Name</h4>
+                        </div>
+                        <div class="post-content">
+                            <p>This is the user's post text.</p>
+                            <!-- User's photo -->
+                            <img src="assets/img/i.jpg" alt="User Photo">
+                            <!-- Additional photos or videos -->
+                            <video controls>
+                                <source src="video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <!-- Add more photos or videos as needed -->
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+
+
+                    <!-- Posts -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+                        <div class="post-content">
+                            This is a post content.
+                        </div>
+                        <img src="assets/img/تنزيل (1).png" alt="Additional Photo">
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <div class="comment-input">
+                                <input type="text" placeholder="Write a comment...">
+                                <button>Post</button>
+                            </div>
+                            <div class="comments">
+                                <!-- Comments will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+                        <div class="post-content">
+                            <img src="assets/img/media-quality-.png" alt="Post Photo">
+                            <p>This is a post with a photo.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+                        <div class="post-content">
+                            <img src="assets/img/تنزيل (1).png" alt="Post Photo">
+                            <p>This is a post with a photo.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+                </section>
+                <section class="news-feed">
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="User Profile Picture">
+                            <h4>User Name</h4>
+                        </div>
+                        <div class="post-content">
+                            <p>This is the user's post text.</p>
+                            <!-- User's photo -->
+                            <img src="assets/img/i.jpg" alt="User Photo">
+                            <!-- Additional photos or videos -->
+                            <img src="assets/img/تنزيل (1).png" alt="Additional Photo">
+                            <video controls>
+                                <source src="video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <!-- Add more photos or videos as needed -->
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <!-- Comments will be dynamically added here -->
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+
+
+                    <!-- Posts -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+                        <div class="post-content">
+                            This is a post content.
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <div class="comment-input">
+                                <input type="text" placeholder="Write a comment...">
+                                <button>Post</button>
+                            </div>
+                            <div class="comments">
+                                <!-- Comments will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+                        <div class="post-content">
+                            <img src="assets/img/media-quality-.png" alt="Post Photo">
+                            <p>This is a post with a photo.</p>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <div class="comment-input">
+                                <input type="text" placeholder="Write a comment...">
+                                <button>Post</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+                    <!-- Example post with photo -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="assets/img/i.jpg" alt="Friend 1">
+                            <h4>Friend 1</h4>
+                        </div>
+
+                        <div class="post-content">
+                            This is a post content.
+                        </div>
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+
+                        <div class="post-actions">
+                            <button><i class="far fa-thumbs-up"></i> Like</button>
+                            <button><i class="far fa-comment"></i> Comment</button>
+                            <button><i class="fas fa-share"></i> Share</button>
+                            <button><i class="far fa-smile"></i> React</button>
+                            <button><i class="far fa-heart"></i> React</button>
+                            <!-- Add more reaction icons as needed -->
+                        </div>
+                        <div class="comment-section">
+                            <div class="comment-input">
+                                <input type="text" placeholder="Write a comment...">
+                                <button>Post</button>
+                            </div>
+                            <div class="comments">
+                                <!-- Comments will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more posts as needed -->
+
+                </section>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Facebook Clone
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
